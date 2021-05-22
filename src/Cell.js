@@ -18,7 +18,7 @@ class Cell extends Component {
   render(){
     return(
       <div className="cell" 
-      style={{backgroundColor:this.props.value}}
+      style={{backgroundColor:this.state.color}}
       onClick={this.handleClick}>
       </div>
     )
