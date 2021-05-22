@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class Cell extends Component {
-  
+
   constructor(props){
     super()
     this.state = {
@@ -19,7 +19,7 @@ class Cell extends Component {
     return(
       <div className="cell" 
       style={{backgroundColor:this.props.value}}
-      onclick={this.handleClick}>
+      onClick={this.handleClick}>
       </div>
     )
   }
