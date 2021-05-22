@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
+import Cell from "./Cell"
 
-export default class Matrix extends Component {
+class Matrix extends Component {
   
   genRow = (vals) => {
     return (
       vals.map((val) => 
-        <div className="cell">
-          {}
-        </div>
+      <Cell value={val} />
       ) 
     )
   }
@@ -31,3 +30,5 @@ export default class Matrix extends Component {
   }
   
 }
+
+export default Matrix;
